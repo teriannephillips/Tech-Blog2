@@ -1,0 +1,20 @@
+<h1 class="heading">Dashboard</h1>
+
+
+<ul class="list">
+    <section class="new-post">
+        <button type="submit" id="new-post">New post</button>
+    </section>
+    {{#each posts}}
+    <section class="post-section" id = {{id}}>
+        <h2 class="post-title">{{title}}</h2>
+        <h3 class = "post-by">by {{user.username}} at {{created_at}}</h3>
+        <p class="post-text">{{post}}</p>
+        <button class = "edit-btn">Edit</button>
+        <button class = 'delete-btn'>Delete</button>
+    </section>
+    {{/each}}
+</ul>
+
+<script src="/javascript/new-post.js"></script>
+<script src="/javascript/delete-edit-post.js"></script>

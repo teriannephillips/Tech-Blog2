@@ -1,0 +1,29 @@
+<h1 class="heading">Home</h1>
+<ul class="list">
+    <section class="post-section">
+        <h2 class="post-title">{{post.title}}</h2>
+        <div class="post-group">
+            <p class="post-by"> Posted by {{post.user.username}}</p>
+            <p class="post-date">{{post.created_at}}</p>
+        </div>
+
+        <p class="post-text"> {{post.post}}</p>
+            {{#each post.comments}}
+            <div class="comment-group">
+            <p class = comment-by>Comment by {{user.username}}</p>
+            <p class = comment-date>{{created_at}}</p>
+           
+        </div>
+         <p class = "comment-text">{{comment_text}}</p>
+            {{/each}}
+        <form class="comment-form">
+            <div>
+                <input type="text" class="entry-field" id="comment" placeholder="write comment here..." />
+            </div>
+            <div>
+                <button type="submit">Post comment</button>
+            </div>
+        </form>
+    </section>
+    <script src="/javascript/comment.js"></script>
+</ul>

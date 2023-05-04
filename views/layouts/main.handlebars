@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Tech Blog</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="/css/main.css">
+<body>
+    <!-- header -->
+    <header id="header-background">
+        <img src = /images/TechBlogLogo.jpg>
+        <div id="header-buttons">
+            <button><a href="/">Home</a></button>
+            <button><a href="/dashboard">Dashboard</a></button>
+            {{#if loggedIn}}
+            <button id="logout">Logout</button>
+            {{else}}
+            <button><a id="login" href="/login">Login</a></button>
+            {{/if}}
+    </header>
+
+    <main>
+        {{{ body }}}
+    </main>
+    
+</body>
+{{#if loggedIn}}
+<script src="/javascript/logout.js"></script>
+{{/if}}
+</html>

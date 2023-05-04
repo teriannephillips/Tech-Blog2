@@ -1,0 +1,137 @@
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+      box-sizing: border-box;
+}
+
+html {
+    font-family: 'Verdana', sans-serif;
+    font-family: 'Arial', sans-serif;
+}
+header {
+    background-color: cadetblue;
+    color: white;
+    padding:1%;
+    width:100%;
+}
+body {
+    background-color: darkgray;
+    color:white;
+}
+h1 {
+    font-size: 20px;
+   padding:2%;
+}
+.heading { 
+    background-color: black;
+    color:white;
+    margin-bottom:2%;
+    width:100%;
+}
+
+a {
+    text-decoration: none;
+    color:white;
+}
+button {
+    background-color: black;
+    border-color: black;
+    color:white;
+    padding: 1%;
+    border-radius: 5%;
+}
+.link{
+margin-top: 50px;
+}
+.login-form, .signup-form {
+    width: 50%;
+    margin: 0 auto;
+  }
+  .post-form, .list {
+    width:80%;
+    margin: 0 auto;
+  }
+  
+  .label {
+    display: block;
+    margin-bottom: 5px;
+  }
+  
+  .entry-field {
+    width: 100%;
+    padding: 2%;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+  }
+  #post-text {
+    min-height: 300px;
+  }
+  .login-link, .signup-link {
+    padding: 2%;
+  }
+.post-title {
+ padding: 1%;
+ background-color: black;
+ font-size: larger;
+}
+.post-date, .post-by, .comment-date, .comment-by {
+   background-color: #3D4849;;
+   padding: 1%;
+   font-size: smaller;
+}
+.post-section {
+    margin:2%;
+}
+.post-group, .comment-group {
+  display:flex;
+  flex-direction: row;
+  width:100%;
+  background-color: #3D4849;;
+}
+.comment-group, .comment-form {
+  margin-top:2%;
+}
+.post-text, .comment-text {
+  background-color: cadetblue;
+  height:max-content;
+  padding:2%;
+}
+new-post {
+  align-self: center;
+  width:50%;
+  margin: 0 auto;
+}
+
+@media screen and (max-width: 768px) {
+  html {
+    width:100%;
+    display:flex;
+  }
+  body {
+    font-size:22pt;
+    width:100%;
+  }
+  header {
+    width:100%;
+  }
+  h1 {
+    font-size:25pt;
+  }
+  .login-form, .signup-form {
+    width: 80%;
+  }
+  .post-form, .list {
+    width:100%;
+  }
+
+}
+@media screen and (max-width: 560px) {
+  img {
+    width:300px;
+  }
+}
